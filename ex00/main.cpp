@@ -6,7 +6,7 @@
 /*   By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 11:58:43 by nlewicki          #+#    #+#             */
-/*   Updated: 2025/03/17 12:26:42 by nlewicki         ###   ########.fr       */
+/*   Updated: 2025/03/17 12:32:30 by nlewicki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,19 +58,3 @@ int main()
 	return 0;
 }
 
-// int main(void)
-// {
-// 	std::vector<int> vec_int({123, 4, 14, 2, 2414, 1});
-
-// 	try
-// 	{
-// 		std::cout << *easyfind(vec_int, 2414) << std::endl;
-// 		std::cout << *easyfind(vec_int, 1) << std::endl;
-// 		std::cout << *easyfind(vec_int, 0) << std::endl;
-// 	}
-// 	catch (std::exception &e)
-// 	{
-// 		std::cout << "Not found" << std::endl;
-// 	}
-// 	return (0);
-// }
