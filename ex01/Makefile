@@ -6,11 +6,11 @@
 #    By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/17 12:33:15 by nlewicki          #+#    #+#              #
-#    Updated: 2025/03/17 12:35:34 by nlewicki         ###   ########.fr        #
+#    Updated: 2025/03/18 13:26:21 by nlewicki         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= easyfind
+NAME		= Span
 CC			= c++
 CFLAGS		= -Wall -Wextra -Werror -std=c++17
 

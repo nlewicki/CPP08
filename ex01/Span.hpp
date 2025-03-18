@@ -6,7 +6,7 @@
 /*   By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 12:33:44 by nlewicki          #+#    #+#             */
-/*   Updated: 2025/03/17 12:40:49 by nlewicki         ###   ########.fr       */
+/*   Updated: 2025/03/18 13:23:45 by nlewicki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ class Span
 		int		longestSpan(void);
 
 		// Exceptions
-		class NoSpanException : public std::exception
+		class FullException : public std::exception
 		{
 			public:
 				virtual const char	*what() const throw();
