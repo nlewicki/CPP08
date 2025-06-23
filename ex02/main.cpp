@@ -6,7 +6,7 @@
 /*   By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/18 13:44:36 by nlewicki          #+#    #+#             */
-/*   Updated: 2025/03/18 14:06:47 by nlewicki         ###   ########.fr       */
+/*   Updated: 2025/06/23 12:41:06 by nlewicki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int main()
 	mstack.pop();
 	std::cout << "Size of the mstack: " << mstack.size() << std::endl;
 	std::cout << "Top element of the list " << l.back() << std::endl;
-	l.pop_front();
+	l.pop_back();
 	std::cout << "Size of the list: " << l.size() << std::endl;
 	std::cout << std::endl;
 	std::cout << "	Iterator test" << std::endl;
