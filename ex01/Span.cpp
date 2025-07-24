@@ -6,7 +6,7 @@
 /*   By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 12:33:34 by nlewicki          #+#    #+#             */
-/*   Updated: 2025/07/24 10:53:08 by nlewicki         ###   ########.fr       */
+/*   Updated: 2025/07/24 11:07:20 by nlewicki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,15 +77,13 @@ int Span::longestSpan(void)
 {
 	if (_v.size() <= 1)
 		throw NoSpanException();
-
-	// Find min and max manually
+		
 	int min_val = *std::min_element(_v.begin(), _v.end());
 	int max_val = *std::max_element(_v.begin(), _v.end());
 
 	// Calculate the absolute difference using long long
 	long long span = std::abs(static_cast<long long>(max_val) - static_cast<long long>(min_val));
 
-	// Check if the span exceeds INT_MAX
 	if (span > static_cast<long long>(INT_MAX))
 		return INT_MAX; // Return INT_MAX if the span is too large
 

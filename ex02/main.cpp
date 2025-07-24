@@ -6,7 +6,7 @@
 /*   By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/18 13:44:36 by nlewicki          #+#    #+#             */
-/*   Updated: 2025/06/23 12:41:06 by nlewicki         ###   ########.fr       */
+/*   Updated: 2025/07/24 11:29:55 by nlewicki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 int main()
 {
 	MutantStack<int> mstack;
-	std::list<int> l; // comparing to the list as it is a container that has iterators in STL
+	std::list<int> l; // comparing to list(a container that has iterators in STL)
 
 	std::cout << "	Functional test" << std::endl;
 	mstack.push(5);
@@ -26,11 +26,13 @@ int main()
 	mstack.push(17);
 	l.push_back(17);
 	std::cout << "Top element of the mstack: " << mstack.top() << std::endl;
-	mstack.pop();
-	std::cout << "Size of the mstack: " << mstack.size() << std::endl;
 	std::cout << "Top element of the list " << l.back() << std::endl;
+	mstack.pop(); // remove the top element
 	l.pop_back();
+	std::cout << "Size of the mstack: " << mstack.size() << std::endl;
 	std::cout << "Size of the list: " << l.size() << std::endl;
+	std::cout << "Top element of the mstack: " << mstack.top() << std::endl;
+	std::cout << "Top element of the list " << l.back() << std::endl;
 	std::cout << std::endl;
 	std::cout << "	Iterator test" << std::endl;
 	mstack.push(3);
