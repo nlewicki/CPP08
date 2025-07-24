@@ -6,7 +6,7 @@
 /*   By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 11:58:43 by nlewicki          #+#    #+#             */
-/*   Updated: 2025/03/17 12:32:30 by nlewicki         ###   ########.fr       */
+/*   Updated: 2025/07/24 10:36:28 by nlewicki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,12 @@
 #include <list>
 #include <deque>
 
-void testEasyFind()
+void test()
 {
 	std::vector<int> vec = {10, 20, 30, 40, 50};
 	std::list<int> lst = {5, 15, 25, 35, 45};
 	std::deque<int> deq = {100, 200, 300, 400, 500};
 
-	std::cout << "🔍 Testing easyfind() with different containers:\n\n";
-
-	// Lambda to test easyfind on different containers
 	auto runTest = [](auto &container, int value, const std::string &containerName) {
 		try
 		{
@@ -54,7 +51,7 @@ void testEasyFind()
 
 int main()
 {
-	testEasyFind();
+	test();
 	return 0;
 }
 

@@ -6,7 +6,7 @@
 /*   By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 12:33:44 by nlewicki          #+#    #+#             */
-/*   Updated: 2025/03/18 13:23:45 by nlewicki         ###   ########.fr       */
+/*   Updated: 2025/07/24 10:52:44 by nlewicki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,13 +44,13 @@ class Span
 		class FullException : public std::exception
 		{
 			public:
-				virtual const char	*what() const throw();
+				const char	*what() const noexcept override;
 		};
 
 		class NoSpanException : public std::exception
 		{
 			public:
-				virtual const char *what() const throw();
+				const char *what() const noexcept override;
 		};
 };
 

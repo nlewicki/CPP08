@@ -6,7 +6,7 @@
 #    By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/17 11:58:13 by nlewicki          #+#    #+#              #
-#    Updated: 2025/03/17 12:02:02 by nlewicki         ###   ########.fr        #
+#    Updated: 2025/07/24 10:33:50 by nlewicki         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME		= easyfind
 CC			= c++
 CFLAGS		= -Wall -Wextra -Werror -std=c++17
 
-SRC_FILES	= main.cpp
+SRC_FILES	= main.cpp easyfind.cpp
 OBJ_FILES	= $(SRC_FILES:.cpp=.o)
 
 all:		$(NAME)
